@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import pandas as pd
 
-# Access to AsistenciApp remote cluster:
+# Access to MongoDB remote cluster:
 MONGO_URI = ""
 
 
