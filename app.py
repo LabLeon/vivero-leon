@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 
 app = Flask(__name__)
@@ -6,11 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    html = '''
-    <h1>Main section</h1>
-    <p>This section will render the index section template.</p>
-    '''
-    return html
+    return render_template('index.html')
 
 
 @app.route('/especies')
