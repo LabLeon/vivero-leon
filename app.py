@@ -10,13 +10,14 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/especies')
-def especies():
-    html = '''
-    <h1>Species section</h1>
-    <p>This section will render the species section template.</p>
-    '''
-    return html
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
+
+
+@app.route('/catalogo')
+def catalogo():
+    return render_template('catalogue.html')
 
 
 @app.route('/especies/<string:name>')

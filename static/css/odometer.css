@@ -1,0 +1,36 @@
+.odometer {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+@keyframes scroller-1 { from { top: 0; filter: blur(0.3px); } to { top: -100% } }
+@keyframes scroller-2 { from { top: 0; filter: blur(0.6px); } to { top: -200% } }
+@keyframes scroller-3 { from { top: 0; filter: blur(1.0px); } to { top: -300% } }
+@keyframes scroller-4 { from { top: 0; filter: blur(1.3px); } to { top: -400% } }
+@keyframes scroller-5 { from { top: 0; filter: blur(1.6px); } to { top: -500% } }
+@keyframes scroller-6 { from { top: 0; filter: blur(2.0px); } to { top: -600% } }
+@keyframes scroller-7 { from { top: 0; filter: blur(2.3px); } to { top: -700% } }
+@keyframes scroller-8 { from { top: 0; filter: blur(2.6px); } to { top: -800% } }
+@keyframes scroller-9 { from { top: 0; filter: blur(3.0px); } to { top: -900% } }
+
+.scroller-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroller-wrapper div span {
+  display: block;
+}
+
+.scroller-wrapper div {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  vertical-align: top;
+  animation-fill-mode: forwards;
+}
