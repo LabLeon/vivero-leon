@@ -19,6 +19,10 @@ def dashboard():
 def catalogo():
     return render_template('catalogue.html')
 
+@app.route('/especie')
+def especie():
+    return render_template('species.html')
+
 
 @app.route('/especies/<string:name>')
 def especies_nombre(name):
