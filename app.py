@@ -19,18 +19,15 @@ def dashboard():
 def catalogo():
     return render_template('catalogue.html')
 
+
 @app.route('/especie')
 def especie():
-    return render_template('species.html')
+    return render_template('species.html', name='Suculenta')
 
 
 @app.route('/especies/<string:name>')
 def especies_nombre(name):
-    html = '''
-    <h1>Specie "%s" section</h1>
-    <p>This section will render the base template for each of the species.</p>
-    ''' % name
-    return html
+    return render_template('species.html', name=name)
 
 
 if __name__ == '__main__':

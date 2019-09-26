@@ -27,10 +27,10 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="static/css/material-kit.css" rel="stylesheet" />
-  <link href="static/css/odometer.css" rel="stylesheet" />
-  <link href="static/css/dashboard.css" rel="stylesheet" />
-  <link href="static/css/material.css" rel="stylesheet" />
+  <link href="{{ base_url }}/static/css/material-kit.css" rel="stylesheet" />
+  <link href="{{ base_url }}/static/css/odometer.css" rel="stylesheet" />
+  <link href="{{ base_url }}/static/css/dashboard.css" rel="stylesheet" />
+  <link href="{{ base_url }}/static/css/material.css" rel="stylesheet" />
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -93,15 +93,15 @@
   <!-- End footer -->
 
   <!--   Core JS Files   -->
-  <script src="static/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="static/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="static/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="static/js/plugins/moment.min.js"></script>
-  <script src="static/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
+  <script src="{{ base_url }}/static/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="{{ base_url }}/static/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="{{ base_url }}/static/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="{{ base_url }}/static/js/plugins/moment.min.js"></script>
+  <script src="{{ base_url }}/static/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
-  <script src="static/js/charts/dashboard.js"></script>
-  <script src="static/js/charts/material.js"></script>
-  <script src="static/js/charts/heatmap.js"></script>
+  <script src="{{ base_url }}/static/js/charts/dashboard.js"></script>
+  <script src="{{ base_url }}/static/js/charts/material.js"></script>
+  <script src="{{ base_url }}/static/js/charts/heatmap.js"></script>
   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
   <script src="static/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
@@ -109,7 +109,7 @@
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="static/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+  <script src="{{ base_url }}/static/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
   <script>
     $(document).ready(function() {
       //init DateTimePickers
