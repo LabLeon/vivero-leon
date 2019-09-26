@@ -14,6 +14,10 @@ def index():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/dashboard2')
+def dashboard2():
+    return render_template('dashboard2.html')
+
 
 @app.route('/catalogo')
 def catalogo():
