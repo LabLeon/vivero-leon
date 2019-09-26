@@ -9,12 +9,17 @@ body {
     background: #f9f9f9;
 }
 
-#chart, .chart-box {
+/* #chart, .chart-box {
     padding-top: 20px;
     padding-left: 10px;
     background: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 22px 35px -16px rgba(0,0,0, 0.1);
+} */
+
+#chart {
+    max-width: 650px;
+    margin: 35px auto;
 }
 
 select.flat-select {
