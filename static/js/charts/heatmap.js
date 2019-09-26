@@ -99,7 +99,7 @@
         },
 
         title: {
-            text: 'Color Scales flipped Vertically'
+            text: 'Especies donadas por mes'
         },
 
     }

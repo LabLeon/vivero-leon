@@ -417,7 +417,7 @@ var optionsCircle4 = {
   colors: ['#775DD0', '#00C8E1', '#FFB900'],
   labels: ['q4'],
   series: [51.56, 6.63, 41.79],
-  labels: ['Junio', 'Juio', 'Agosto'],
+  labels: ['Junio', 'Julio', 'Agosto'],
   theme: {
     monochrome: {
       enabled: false
