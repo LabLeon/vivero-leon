@@ -1,5 +1,6 @@
 Flask
 pymongo[srv]
 pandas
+qrcode
 jupyterlab
 gunicorn
