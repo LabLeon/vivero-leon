@@ -57,27 +57,27 @@ def especies_nombre(name):
     especieqr = [
         {
             "nombre": "HIERBABUENA",
-            "descripcion": unidecode("Es una especie del género Mentha, una hierba aromática muy empleada en gastronomía y perfumería por su aroma intenso y fresco. Tiene propiedades útiles, antiespasmódicas, es carminativo, antiséptico, analgésico, antiinflamatorio y estimulante."),
+            "descripcion": u"Es una especie del género Mentha, una hierba aromática muy empleada en gastronomía y perfumería por su aroma intenso y fresco. Tiene propiedades útiles, antiespasmódicas, es carminativo, antiséptico, analgésico, antiinflamatorio y estimulante.",
             "imagen": "hierbabuena.jpg"
         },
         {
             "nombre": "SUCULENTA",
-            "descripcion": unidecode("Se dan típicamente zonas secas y calurosas, donde el agua es escasa. Muchas de las especies de esta familia son populares en jardinería y floricultura; son plantas duras y requieren cuidados mínimos. Otra ventaja para el cultivo de estas plantas es lo habitualmente sencillo de su propagación, necesitándose en algunos casos una simple hoja para lograr un nuevo ejemplar."),
+            "descripcion": u"Se dan típicamente zonas secas y calurosas, donde el agua es escasa. Muchas de las especies de esta familia son populares en jardinería y floricultura; son plantas duras y requieren cuidados mínimos. Otra ventaja para el cultivo de estas plantas es lo habitualmente sencillo de su propagación, necesitándose en algunos casos una simple hoja para lograr un nuevo ejemplar.",
             "imagen": "suculenta.jpg"
         },
         {
             "nombre": "CEMPASUCHIL",
-            "descripcion": unidecode("Es una especie de la familia Asteraceae, nativa de México, donde se encuentra en estado silvestre principalmente en los estados de Chiapas, México, Morelos, Puebla, San Luis Potosí, Sinaloa, Tlaxcala, Oaxaca, Jalisco y Veracruz. La principal característica de las flores es que están agrupadas en cabezuelas o en inflorescencias solitarias, sobre pedúnculos de hasta 15 cm de largo, son liguladas de colores amarillo a rojo."),
+            "descripcion": u"Es una especie de la familia Asteraceae, nativa de México, donde se encuentra en estado silvestre principalmente en los estados de Chiapas, México, Morelos, Puebla, San Luis Potosí, Sinaloa, Tlaxcala, Oaxaca, Jalisco y Veracruz. La principal característica de las flores es que están agrupadas en cabezuelas o en inflorescencias solitarias, sobre pedúnculos de hasta 15 cm de largo, son liguladas de colores amarillo a rojo.",
             "imagen": "cempasuchil.jpg"
         },
         {
             "nombre": "DALIA",
-            "descripcion": unidecode("La dalia es una especie originaria de los bosques templados del Sur y Centro de México. Posee raíces en forma de camotes, los cuales son comestibles y medicinales, ahora se está cultivando en zonas rurales para producir té a partir de la misma."),
+            "descripcion": u"La dalia es una especie originaria de los bosques templados del Sur y Centro de México. Posee raíces en forma de camotes, los cuales son comestibles y medicinales, ahora se está cultivando en zonas rurales para producir té a partir de la misma.",
             "imagen": "dalia.jpg"
         },
         {
             "nombre": "ROMERO",
-            "descripcion": unidecode("El romero es un arbusto aromático, leñoso, de hojas perennes, muy ramificado y ocasionalmente achaparrado y que puede llegar a medir 2 metros de altura. Se cría en todo tipo de suelos, preferiblemente los secos y algo arenosos y permeables, adaptándose muy bien a los suelos pobres. Crece en zonas litorales y de montaña baja."),
+            "descripcion": u"El romero es un arbusto aromático, leñoso, de hojas perennes, muy ramificado y ocasionalmente achaparrado y que puede llegar a medir 2 metros de altura. Se cría en todo tipo de suelos, preferiblemente los secos y algo arenosos y permeables, adaptándose muy bien a los suelos pobres. Crece en zonas litorales y de montaña baja.",
             "imagen": "romero.jpg"
         }
     ]
