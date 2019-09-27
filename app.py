@@ -3,7 +3,6 @@
 
 from flask import Flask
 from flask import render_template
-from unidecode import unidecode
 import qrcode
 
 from io import BytesIO
