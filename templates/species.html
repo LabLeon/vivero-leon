@@ -8,6 +8,11 @@
               <div class="col-md-8 ml-auto mr-auto">
                 <p><img src="data:image/png;base64,{{ qrimg | safe }}" alt="qr" width="200px"></p>
                 <h2>{{ name }} <i class="material-icons">eco</i></h2>
+                {% if data != 1 %}
+                <h4>
+                    {{ data.descripcion }}
+                </h4>
+                {% else %}
                 <h4>
                     Estas plantas almacenan agua en sus hojas suculentas ya que su hábitat lo
                     conforman típicamente zonas secas y calurosas, donde el agua es escasa.
@@ -16,13 +21,18 @@
                     Otra ventaja para el cultivo de estas plantas es lo habitualmente sencillo de su propagación,
                     necesitándose en algunos casos una simple hoja para lograr un nuevo ejemplar.
                 </h4>
+                {% endif %}
               </div>
             </div>
 
               <div class="space-50"></div>
               <div class="row">
                 <div class="col-md-6 ml-auto mr-auto">
+                    {% if data != 1 %}
+                    <img src="{{ base_url }}/static/img/{{ data.imagen }}" alt="Rounded Image" class="img-raised rounded img-fluid" width="70%">
+                    {% else %}
                     <img src="{{ base_url }}/static/img/plant5.jpg" alt="Rounded Image" class="img-raised rounded img-fluid" width="70%">
+                    {% endif %}
                 </div>
               </div>
 

@@ -81,7 +81,12 @@ def especies_nombre(name):
         }
     ]
 
-    return render_template('species.html', name=name, qrimg=img_str)
+    data = 1
+    for item in especieqr:
+        if item['nombre'] == name:
+            data = item
+
+    return render_template('species.html', name=name, data=data, qrimg=img_str)
 
 
 if __name__ == '__main__':
