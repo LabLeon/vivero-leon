@@ -14,35 +14,21 @@
                       <table class="table table-hover">
                         <thead class="text-warning">
                           <th>#</th>
+                          <th>Fecha</th>
                           <th>Especie</th>
                           <th>Donaciones</th>
                           <th>Tipo</th>
                         </thead>
                         <tbody>
-                          <tr onclick="location.href='/especies/aguacate'">
-                            <td>1</td>
-                            <td>Aguacate</td>
-                            <td>738</td>
+                          {% for _, item in data %}
+                          <tr onclick="location.href='/especies/{{ item.especie }}'">
+                            <td>{{ _ + 1 }}</td>
+                            <td>{{ item.fecha }}</td>
+                            <td>{{ item.especie }}</td>
+                            <td>{{ item.piezas }}</td>
                             <td><i class="material-icons">nature_people</i></td>
                           </tr>
-                          <tr onclick="location.href='/especies/aguacate'">
-                            <td>2</td>
-                            <td>Hierbabuena</td>
-                            <td>789</td>
-                            <td><i class="material-icons">eco</i></td>
-                          </tr>
-                          <tr onclick="location.href='/especies/aguacate'">
-                            <td>3</td>
-                            <td>Pino</td>
-                            <td>142</td>
-                            <td><i class="material-icons">nature</i></td>
-                          </tr>
-                          <tr onclick="location.href='/especies/aguacate'">
-                            <td>4</td>
-                            <td>Tulipan</td>
-                            <td>735</td>
-                            <td><i class="material-icons">local_florist</i></td>
-                          </tr>
+                          {% endfor %}
                         </tbody>
                       </table>
                     </div>

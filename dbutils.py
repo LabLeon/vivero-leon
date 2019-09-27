@@ -58,3 +58,4 @@ if __name__ == '__main__':
     # This section was used to fill the database.
     # It will stay commented since it has been done already.
     # db_fill_from_csv()
+    pass
