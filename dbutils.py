@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import pandas as pd
 
 # Access to MongoDB remote cluster:
-MONGO_URI = ""
+MONGO_URI = "mongodb+srv://admin:admin@viveros-m3kcn.mongodb.net/test"
 
 
 def db_connect_to_collection(MONGO_URI, database, collection):
