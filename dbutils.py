@@ -1,8 +1,8 @@
 #!/usr/bin/python
-# -*- coding: <encoding name> -*-
+# -*- coding: utf-8 -*-
 
 from pymongo import MongoClient
-import pandas as pd
+# import pandas as pd
 
 # Access to MongoDB remote cluster:
 MONGO_URI = ""
@@ -32,29 +32,29 @@ def db_insert_document(collection, document):
     return collection.insert_one(document)
 
 
-def db_fill_from_csv():
-    # Connect to DB:
-    print("[INFO] Connecting to database...")
-    donations = db_connect_to_collection(MONGO_URI, 'viveros', 'donaciones')
-
-    # Load Excel file:
-    print("[INFO] Reading CSV file...")
-    df = pd.read_csv('viveros.csv')
-    total = len(df)
-
-    # Fill database from Excel file:
-    for _, item in df.iterrows():
-        print("[INFO] * Inserting point %d from %d." % (_ + 1, total))
-        if item['Envase'] != (None or '' or ' '):
-            donation = {
-                'fecha': item['Fecha'],
-                'envase': item['Envase'],
-                'piezas': item['Piezas'],
-                'especie': item['Especie']
-            }
-            db_insert_document(donations, donation)
-    print("[INFO] Insertion finished.")
-    return
+# def db_fill_from_csv():
+#     # Connect to DB:
+#     print("[INFO] Connecting to database...")
+#     donations = db_connect_to_collection(MONGO_URI, 'viveros', 'donaciones')
+#
+#     # Load Excel file:
+#     print("[INFO] Reading CSV file...")
+#     df = pd.read_csv('viveros.csv')
+#     total = len(df)
+#
+#     # Fill database from Excel file:
+#     for _, item in df.iterrows():
+#         print("[INFO] * Inserting point %d from %d." % (_ + 1, total))
+#         if item['Envase'] != (None or '' or ' '):
+#             donation = {
+#                 'fecha': item['Fecha'],
+#                 'envase': item['Envase'],
+#                 'piezas': item['Piezas'],
+#                 'especie': item['Especie']
+#             }
+#             db_insert_document(donations, donation)
+#     print("[INFO] Insertion finished.")
+#     return
 
 
 if __name__ == '__main__':
