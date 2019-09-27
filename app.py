@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: <encoding name> -*-
+
 from flask import Flask
 from flask import render_template
 from unidecode import unidecode

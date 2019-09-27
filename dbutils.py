@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: <encoding name> -*-
+
 from pymongo import MongoClient
 import pandas as pd
 
