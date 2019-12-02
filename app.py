@@ -26,6 +26,9 @@ def index():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/donacion')
+def donacion():
+    return render_template('donaciones.html')
 
 @app.route('/catalogo')
 def catalogo():
