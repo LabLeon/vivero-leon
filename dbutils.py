@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 
 from pymongo import MongoClient
+import os
 # import pandas as pd
 
 # Access to MongoDB remote cluster:
-MONGO_URI = ""
+MONGO_URI = os.getenv("MONGO_URI")
 
 
 def db_connect_to_collection(MONGO_URI, database, collection):
