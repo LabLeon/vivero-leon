@@ -1,5 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from dotenv import load_dotenv
+load_dotenv()
 
 from flask import Flask
 from flask import render_template

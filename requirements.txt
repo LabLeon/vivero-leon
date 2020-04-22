@@ -1,4 +1,5 @@
 flask
 pymongo
+python-dotenv
 qrcode
 gunicorn
