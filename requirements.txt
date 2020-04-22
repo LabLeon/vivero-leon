@@ -1,5 +1,8 @@
 flask
+google-api-python-client
+google-auth
+google-auth-httplib2
+gunicorn
 pymongo
 python-dotenv
 qrcode
-gunicorn
