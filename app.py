@@ -7,6 +7,8 @@ from flask import Flask
 from flask import render_template
 import qrcode
 
+from gsheet_utils import GSheet
+
 from io import BytesIO
 import base64
 
@@ -18,10 +20,12 @@ from dbutils import db_fetch_data
 app = Flask(__name__)
 donations = db_connect_to_collection(MONGO_URI, 'viveros', 'donaciones')
 
+gsheet = GSheet()
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    total_donations = gsheet.get_data("'donaciones 2020'!I1")[0][0]
+    return render_template('index.html', total_donations=f"{int(total_donations):,}")
 
 
 @app.route('/dashboard')
